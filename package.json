@@ -1,0 +1,76 @@
+{
+  "name": "events-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@react-google-maps/api": "^1.10.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.20.0",
+    "babel-eslint": "^10.0.3",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "immutable": "^4.0.0-rc.12",
+    "jest": "24.9.0",
+    "lodash.delay": "^4.1.1",
+    "moment": "^2.28.0",
+    "nodemon": "^2.0.4",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-datetime": "^3.0.2",
+    "react-dom": "^16.13.1",
+    "react-modal": "^3.11.2",
+    "react-redux": "^5.0.7",
+    "react-scripts": "3.4.3",
+    "redux": "^4.0.0",
+    "redux-mock-store": "^1.5.4",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "nodemon server/server.js & react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --coverage",
+    "eject": "react-scripts eject"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.js": "eslint",
+    "server/**/*.js": "eslint",
+    "test/**/*.js": "eslint"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.4",
+    "eslint": "^6.6.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-config-standard-react": "^9.2.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "eslint-plugin-standard": "^4.0.1"
+  }
+}
